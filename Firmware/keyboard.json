@@ -1,0 +1,48 @@
+{
+    "manufacturer": "Naman",
+    "keyboard_name": "naman_hackpad",
+    "maintainer": "Nam2302",
+    "bootloader": "rp2040",
+    "features": {
+        "bootmagic": true,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "encoder": true,
+        "oled": true
+    },
+    "matrix_pins": {
+        "rows": ["GP26", "GP27", "GP28", "GP29"],
+        "cols": ["GP0", "GP1"]
+    },
+    "diode_direction": "COL2ROW",
+    "encoder": {
+        "rotary": [
+            {"pin_a": "GP2", "pin_b": "GP4", "resolution": 4}
+        ]
+    },
+    "processor": "RP2040",
+    "url": "https://github.com/Nam2302",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0001",
+        "vid": "0xFEED"
+    },
+    "i2c_driver": {
+        "sda_pin": "GP6",
+        "scl_pin": "GP7"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0, "label": "New Tab"},
+                {"matrix": [1, 0], "x": 0, "y": 1, "label": "New Window"},
+                {"matrix": [2, 0], "x": 0, "y": 2, "label": "Undo"},
+                {"matrix": [3, 0], "x": 0, "y": 3, "label": "Redo"},
+                {"matrix": [0, 1], "x": 1, "y": 0, "label": "Refresh"},
+                {"matrix": [1, 1], "x": 1, "y": 1, "label": "Paste"},
+                {"matrix": [2, 1], "x": 1, "y": 2, "label": "Copy"}
+            ]
+        }
+    }   
+}
